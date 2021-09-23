@@ -7,9 +7,9 @@ jobs:
     name: basic test
     runs-on: ubuntu-atest
     steps:
-      - name: check index
-      shell: pwsh
-      run: Test-Path src\main\resources\templates | should -be $true
+      - name: check index page
+        shell: pwsh
+        run: Test-Path src\main\resources\templates | should -be $true
   test:
     runs-on: ubuntu-latest
     strategy:
