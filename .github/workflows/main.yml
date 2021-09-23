@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: check index.html
       shell: pwsh
-      run: Test-Path index.html | should -be $true
+      run: Test-Path src\main\resources\templates | should -be $true
   test:
     runs-on: ubuntu-latest
     strategy:
