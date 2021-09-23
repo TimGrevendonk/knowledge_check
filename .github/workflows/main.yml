@@ -7,7 +7,7 @@ jobs:
     name: basic test
     runs-on: ubuntu-atest
     steps:
-      - name: check index.html
+      - name: check index
       shell: pwsh
       run: Test-Path src\main\resources\templates | should -be $true
   test:
