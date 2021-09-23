@@ -3,6 +3,13 @@ name: Test, Upload artifact and Deploy to Heroku
 on: push
 
 jobs:
+  pester-test:
+    name: basic test
+    runs-on: ubuntu-atest
+    steps:
+      - name: check .git
+      shell: pwsh
+      run: Test-Path .git | should -be $true
   test:
     runs-on: ubuntu-latest
     strategy:
