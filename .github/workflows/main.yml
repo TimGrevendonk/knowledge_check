@@ -5,7 +5,7 @@ on: push
 jobs:
   pester-test:
     name: basic test
-    runs-on: ubuntu-atest
+    runs-on: ubuntu-latest
     steps:
       - name: check index page
         shell: pwsh
