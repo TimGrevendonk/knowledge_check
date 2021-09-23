@@ -7,9 +7,9 @@ jobs:
     name: basic test
     runs-on: ubuntu-atest
     steps:
-      - name: check .git
+      - name: check index.html
       shell: pwsh
-      run: Test-Path .git | should -be $true
+      run: Test-Path index.html | should -be $true
   test:
     runs-on: ubuntu-latest
     strategy:
